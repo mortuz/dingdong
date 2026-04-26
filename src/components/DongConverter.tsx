@@ -119,6 +119,8 @@ const DongConverter: React.FC = () => {
 
       <input
         type='number'
+        inputMode='decimal'
+        enterKeyHint='done'
         placeholder={`Enter ${sourceCurrency} (${sourceSymbol})`}
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
